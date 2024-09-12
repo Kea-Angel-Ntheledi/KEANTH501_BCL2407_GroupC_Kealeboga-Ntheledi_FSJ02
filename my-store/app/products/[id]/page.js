@@ -17,7 +17,7 @@ export default async function ProductPage({ params }) {
         <img src={product.image} alt={product.title} className="w-full h-96 object-cover" />
         <div>
           <h1 className="text-2xl font-bold mb-4">{product.title}</h1>
-          <p className="text-lg text-gray-700 mb-4">{product.description}</p>
+          <p className="text-lg text-gray-00 mb-4">{product.description}</p>
           <p className="text-xl font-semibold mb-4">Price: ${product.price}</p>
         </div>
       </div>
