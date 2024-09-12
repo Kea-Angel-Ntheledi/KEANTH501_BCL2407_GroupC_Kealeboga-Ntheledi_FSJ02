@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useShoppingCart } from '@/hooks/use-shopping-cart';
 import { formatCurrency } from '@/lib/utils';
-import { Logo } from '@/components/index';
+import { Logo } from '@/components/Pagination';
 import { ShoppingCartIcon } from '@heroicons/react/solid';
 
 const Header = () => {

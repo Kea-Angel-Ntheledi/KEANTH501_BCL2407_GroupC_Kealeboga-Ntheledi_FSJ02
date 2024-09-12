@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { toast } from 'react-hot-toast';
 import { useShoppingCart } from '@/hooks/use-shopping-cart';
 import { formatCurrency } from '@/lib/utils';
-import { Rating } from '@/components/index';
+import { Rating } from '@/components/Pagination';
 
 const ProductCard = props => {
   const { cartCount, addItem } = useShoppingCart();

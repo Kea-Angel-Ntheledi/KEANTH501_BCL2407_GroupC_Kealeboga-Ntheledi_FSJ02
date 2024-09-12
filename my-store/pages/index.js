@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ProductCard } from '@/components/index';
+import { ProductCard } from '@/components/Pagination';
 
 import products from 'products';
 
