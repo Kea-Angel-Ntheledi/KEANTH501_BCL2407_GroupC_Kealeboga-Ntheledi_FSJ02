@@ -1,30 +1,24 @@
-import Link from 'next/link';
-import { useShoppingCart } from '@/hooks/use-shopping-cart';
-import { formatCurrency } from '@/lib/utils';
-import { Logo } from '@/components/Pagination';
-import { ShoppingCartIcon } from '@heroicons/react/solid';
+// components/NavBar.js
+import Link from 'next/link'
 
-const Header = () => {
-  const { totalPrice, cartCount } = useShoppingCart();
-
-  return (
-    <header className="sticky top-0 bg-white z-10 shadow">
-      <div className="container xl:max-w-screen-xl mx-auto p-6 flex justify-between">
-        <Logo />
-        <Link href="/cart">
-          <a className="flex items-center space-x-1 text-gray-700 hover:text-gray-900">
-            <div className="relative">
-              <ShoppingCartIcon className="w-7 h-7 flex-shrink-0" />
+export default function NavBar() {
+    return(
+        <nav className="bg-gray-800 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <Link href="/" className="flex-shrink-0">
+              <span className="font-bold text-xl">MyNextApp</span>
+            </Link>
+            <div className="ml-10 flex items-baseline space-x-4">
+              <Link href="/" className="hover:bg-gray-700 px-3 py-2 rounded-md">Home</Link>
+              <Link href="/products" className="hover:bg-gray-700 px-3 py-2 rounded-md">Products</Link>
+              <Link href="/about" className="hover:bg-gray-700 px-3 py-2 rounded-md">About</Link>
+              <Link href="/contact" className="hover:bg-gray-700 px-3 py-2 rounded-md">Contact</Link>
             </div>
-            <p className="text-lg">
-              {formatCurrency(totalPrice)}{' '}
-              <span className="text-sm text-gray-500">({cartCount})</span>
-            </p>
-          </a>
-        </Link>
+          </div>
+        </div>
       </div>
-    </header>
-  );
-};
-
-export default Header;
+    </nav>
+    )
+}

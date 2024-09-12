@@ -1,23 +1,14 @@
-import { StarIcon as EmptyStarIcon } from '@heroicons/react/outline';
-import { StarIcon } from '@heroicons/react/solid';
+import { fetchProductById } from '@/lib/products/api'
 
-const Rating = ({ rate = 0, count = 0, max = 5 }) => {
-  const roundedRate = Math.round(rate);
+export default async function ProductPage({ params }) {
+  const product = await fetchProductById(params.id)
 
   return (
-    <div className="flex items-center -ml-1">
-      {[...new Array(roundedRate)].map((_, i) => (
-        <StarIcon key={i} className="w-6 h-6 flex-shrink-0 text-yellow-400" />
-      ))}
-      {[...new Array(max - roundedRate)].map((_, i) => (
-        <EmptyStarIcon
-          key={i}
-          className="w-5 h-5 flex-shrink-0 text-yellow-400"
-        />
-      ))}
-      <span className="ml-2 text-gray-500">({count})</span>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold mb-4">{product.title}</h1>
+      <img src={product.thumbnail} alt={product.title} className="w-64 h-64 object-contain mb-4" />
+      <p className="text-gray-700">{product.description}</p>
+      <p className="mt-4 text-xl font-semibold">${product.price}</p>
     </div>
-  );
-};
-
-export default Rating;
+  )
+}
