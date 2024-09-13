@@ -30,10 +30,10 @@ Prerequisites
 Ensure Node.js is installed. You can download it from nodejs.org.
 ### Clone the Repository
 1. Start by cloning the repository to your local machine:
-      -Git clone https://github.com/your-username/ecommerce-store.git
-      -cd ecommerce-store
+      - Git clone https://github.com/your-username/ecommerce-store.git
+      - cd ecommerce-store
 2. Install the required dependencies using npm or yarn:
-      -npm install
+      - npm install
 3. Start the Next.js development server:
       - npm run dev
 
