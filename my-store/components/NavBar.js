@@ -10,11 +10,10 @@ export default function NavBar() {
             <Link href="/" className="flex-shrink-0">
               <span className="font-bold text-xl">MyShop!</span>
             </Link>
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-4 ">
               <Link href="/" className="hover:bg-gray-700 px-3 py-2 rounded-md">Home</Link>
-              <Link href="/products" className="hover:bg-gray-700 px-3 py-2 rounded-md">Products</Link>
               <Link href="/about" className="hover:bg-gray-700 px-3 py-2 rounded-md">About</Link>
-              <Link href="/contact" className="hover:bg-gray-700 px-3 py-2 rounded-md">Contact</Link>
+              <Link href="/Wishlist" className="hover:bg-gray-700 px-3 py-2 rounded-md">Wishlist</Link>
             </div>
           </div>
         </div>
