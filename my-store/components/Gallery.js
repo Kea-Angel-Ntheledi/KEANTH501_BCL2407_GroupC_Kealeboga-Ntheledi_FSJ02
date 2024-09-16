@@ -4,7 +4,7 @@
 
 import { useState } from 'react';
 
-export default function Images({ images }) {
+export default function Gallery({ images }) {
   const [selectedImage, setSelectedImage] = useState(0);
 
   const handleNextImage = () => {

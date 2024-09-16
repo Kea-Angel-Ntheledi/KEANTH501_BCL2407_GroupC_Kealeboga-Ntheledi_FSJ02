@@ -1,8 +1,9 @@
 // app/products/[id]/page.js
-import { fetchProductById } from '../lib/product/api';
-import LoadingSpinner from '@/components/LoadingSpinner';
+import { fetchProductById } from '../../../lib/product/api';
+import LoadingSpinner from '@components/LoadingSpinner';
 import BackButton from '@components/BackButton';
 import Gallery from '@components/Gallery';
+
 
 export default async function ProductPage({ params }) {
   const { id } = params;
