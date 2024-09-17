@@ -6,9 +6,9 @@ Welcome to the eCommerce Store MyStore project! This application is a modern, fu
 ### Dynamic Product Pages: 
 View detailed information about products, including images, descriptions, prices, and reviews.
 ### Interactive UI: 
-Includes "Back", "Add to Cart", and "Like" buttons with responsive design.
+Includes "Back", whichis responsive and the "Add to Cart", and "Like" buttons which are non responsive.
 ### Cart Management: 
-Basic functionality for adding products to a cart (implementation can be extended).
+Unfunctionality button for adding products to a cart (implementation can be extended).
 ### Review System: 
 Users can read and view customer reviews.
 
