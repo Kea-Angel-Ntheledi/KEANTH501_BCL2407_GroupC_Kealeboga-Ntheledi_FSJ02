@@ -3,6 +3,7 @@ import { fetchProducts } from 'lib/products/api';
 import ProductGrid from '@components/ProductGrid';
 import Pagination from '@components/Pagination';
 
+
 export default async function HomePage({searchParams}) {
   const currentPage = searchParams.page ? parseInt(searchParams.page, 10) : 1
   const productsPerPage = 20
